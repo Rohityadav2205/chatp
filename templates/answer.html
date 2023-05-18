@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Display Question_Answer</title>
+    <style>
+   body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+   }
+
+.container:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #0047ab;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #333333;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Answer</h1>
+      <div>
+        <div class="container">
+
+          <p>Question: {{question}}</p>
+
+        </div>
+        <div>
+          <p>Answer: {{answer}}</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
