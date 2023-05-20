@@ -6,9 +6,6 @@ def process_question(question):
     try:
         openai.api_key = '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'
 
-        # openai.api_key = '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'
-        print(question)
-
         response = openai.Completion.create(
             engine='text-davinci-003',
             # prompt='What is the capital of France?',
@@ -43,7 +40,6 @@ def answer():
     print(question)
     # Process the question and get the answer
     answer,color = process_question(question)
-    print(answer)
     return render_template('answer.html', question=question, answer=answer,color=color)
 
 
