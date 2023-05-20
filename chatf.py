@@ -4,7 +4,7 @@ import openai
 
 def process_question(question):
     try:
-        openai.api_key = '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'
+        openai.api_key = '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'
 
         response = openai.Completion.create(
             engine='text-davinci-003',
